@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+
+/*fonts */
+h1 {
+    font-size: 3.5rem;
+
+}
+
+
+
+
+
+/* Nav Bar */
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar li {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+
+}
+
+.nav-bar li ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.person-article {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    letter-spacing: 1.5px;
+    word-spacing: 5.5px;
+    width: 70%;
+}
+
+img {
+    width: 300px;
+}
+
+.brendan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eich {
+    color: #d1c815;
+}

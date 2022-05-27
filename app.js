@@ -2,10 +2,21 @@ const { request } = require('express');
 const express = require('express');
 const res = require('express/lib/response');
 const app = express();
-app.use(express.static('views'));
-app.get('/', (request, res, next) => {
+app.use(express.static('public'));
 
+app.get('/', (req, res, next) => {
     res.sendFile(__dirname + '/views/home.html')
+})
+
+app.get('/about', (req, res, next) => {
+    res.sendFile(__dirname + '/views/about.html')
+})
+
+app.get('/works', (req, res, next) => {
+    res.sendFile(__dirname + '/views/works.html')
+})
+app.get('/gallery', (req, res, next) => {
+    res.sendFile(__dirname + '/views/gallery.html')
 })
 
 
